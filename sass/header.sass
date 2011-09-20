@@ -14,7 +14,7 @@
 	height: $header-height
 	margin: 0
 	padding: 0
-	border-top: 4px solid $primary-light
+	border-top: 4px solid $secondary
 	.center
 		@extend .center-container
 		@extend .box
@@ -37,27 +37,7 @@
 					padding: 0
 					border: 0
 					background: transparent
-		#phone
-			@extend .box
-			@extend .corner-top
-			position: absolute
-			top: 75px
-			right: ($h-gap)
-			width: 200px
-			height: 40px
-			margin: 0
-			background: $secondary-dark
-			img
-				position: relative
-				+float-right
-				width: 30px
-				height: 30px
-			p
-				@extend .font-trajan
-				+float-right
-				margin: 7px 25px 0 10px
-				color: #fff
-				font-weight: bold
+
 			
 		
 			
@@ -65,7 +45,7 @@
 ul#topnav
 	@extend .font-helvetica
 	+float-right
-	margin: 33px ($v-gap) 0 0
+	margin: 44px ($v-gap) 0 0
 	padding: 0
 	color: $nav-text
 	font-size: 11px
@@ -100,15 +80,13 @@ ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover
 	background: #efefef	
  
 ul#topnav li .sub 
-	@extend .corner-bottom
 	display: none
 	position: absolute
 	+float-left
-	top: 2.7em
-	left: 1px
+	top: 26px
+	left: 0px
 	background: $nav-dropdown-bg
 	padding: 5px 0 6px 0
-	border-top: 2px solid $nav-dropdown-accent
 	z-index: 50
 
 ul#topnav li .row 
@@ -125,6 +103,7 @@ ul#topnav li .sub ul
 
 ul#topnav .sub ul li 
 	width: 140px
+	border: none
 
 ul#topnav .sub ul li h2 a 
 	margin: 0 0 .5em 0

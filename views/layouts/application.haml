@@ -1,21 +1,35 @@
-- @sitename = "Steadfast"
+- @sitename = "Vietnamese American Chamber of Commerce"
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["Services", "/services"]
-- @link3 = ["Our Company", "/company"]
-- @link4 = ["News &amp; Press", "/newspress"]
+- @link2 = ["About Us", "/about"]
+- @link3 = ["Events", "/events"]
+- @link4 = ["ssss", "/ssss"]
 - @link5 = ["Contact", "/contact"]
 
+// SUBNAV LINKS
+- @link3A = ["Quarterly Luncheons", "/luncheons"]
+- @link3B = ["Networking Opportunities", "/networking"]
+- @link3C = ["Annual Gala", "/gala"]
+- @link3D = ["Educational Workshops", "/workshops"]
+- @link3E = ["Community Outreach", "/outreach"]
+
+- @link2A = ["Background", "/background"]
+- @link2B = ["About", "/about"]
+- @link2C = ["Vision", "/vision"]
+- @link2D = ["Mission", "/mission"]
+- @link2E = ["Economic Prosperity", "/prosperity"]
+
+
 // FOOTER LINKS
-- @linkA1 = ["713-224-2323 ", "ssss"]
-- @linkA2 = ["graberlaw@sbcglobal.net", "mailto:graberlaw@sbcglobal.net"]
+- @linkA1 = ["281-530-4421 ", "ssss"]
+- @linkA2 = ["info@vacc-houston.org", "mailto:info@vacc-houston.org"]
 - @linkA3 = ["link name", "/path"]
 - @linkA4 = ["link name", "/path"]
 - @linkA5 = ["link name", "/path"]
 
-- @linkB1 = ["Terms of Service", "/legal#terms"]
-- @linkB2 = ["Privacy Policy", "/legal#privacy"]
+- @linkB1 = ["9750 Bellaire Blvd. Ste 218 Houston, TX 77036", "ssss"]
+- @linkB2 = ["MAP", "http://maps.google.com/maps?q=9750+Bellaire+Blvd.+Ste+218&hl=en&t=m&z=17&vpsrc=0"]
 - @linkB3 = ["link name", "/path"]
 - @linkB4 = ["link name", "/path"]
 - @linkB5 = ["link name", "/path"]
@@ -105,68 +119,68 @@
     
     
     // DROPDOWN MENU  
-    / :javascript
-    /   $(document).ready(function() {
-    / 
-    / 
-    /     function megaHoverOver(){
-    /       $(this).find(".sub").stop().fadeTo('fast', 1).show();
-    / 
-    /       //Calculate width of all ul's
-    /       (function($) { 
-    /         jQuery.fn.calcSubWidth = function() {
-    /           rowWidth = 0;
-    /           //Calculate row
-    /           $(this).find("ul").each(function() {          
-    /             rowWidth += $(this).width(); 
-    /           }); 
-    /         };
-    /       })(jQuery); 
-    / 
-    /       if ( $(this).find(".row").length > 0 ) { //If row exists...
-    /         var biggestRow = 0; 
-    /         //Calculate each row
-    /         $(this).find(".row").each(function() {                 
-    /           $(this).calcSubWidth();
-    /           //Find biggest row
-    /           if(rowWidth > biggestRow) {
-    /             biggestRow = rowWidth;
-    /           }
-    /         });
-    /         //Set width
-    /         $(this).find(".sub").css({'width' :biggestRow});
-    /         $(this).find(".row:last").css({'margin':'0'});
-    / 
-    /       } else { //If row does not exist...
-    / 
-    /         $(this).calcSubWidth();
-    /         //Set Width
-    /         $(this).find(".sub").css({'width' : rowWidth});
-    / 
-    /       }
-    /     }
-    / 
-    /     function megaHoverOut(){ 
-    /       $(this).find(".sub").stop().fadeTo('fast', 0, function() {
-    /         $(this).hide(); 
-    /       });
-    /     }
-    / 
-    / 
-    /     var config = {    
-    /        sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
-    /        interval: 100, // number = milliseconds for onMouseOver polling interval    
-    /        over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
-    /        timeout: 00, // number = milliseconds delay before onMouseOut    
-    /        out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
-    /     };
-    / 
-    /     $("ul#topnav li .sub").css({'opacity':'0'});
-    /     $("ul#topnav li").hoverIntent(config);
-    / 
-    / 
-    / 
-    /   });
+    :javascript
+          $(document).ready(function() {
+        
+        
+            function megaHoverOver(){
+              $(this).find(".sub").stop().fadeTo('fast', 1).show();
+        
+              //Calculate width of all ul's
+              (function($) { 
+                jQuery.fn.calcSubWidth = function() {
+                  rowWidth = 0;
+                  //Calculate row
+                  $(this).find("ul").each(function() {          
+                    rowWidth += $(this).width(); 
+                  }); 
+                };
+              })(jQuery); 
+        
+              if ( $(this).find(".row").length > 0 ) { //If row exists...
+                var biggestRow = 0; 
+                //Calculate each row
+                $(this).find(".row").each(function() {                 
+                  $(this).calcSubWidth();
+                  //Find biggest row
+                  if(rowWidth > biggestRow) {
+                    biggestRow = rowWidth;
+                  }
+                });
+                //Set width
+                $(this).find(".sub").css({'width' :biggestRow});
+                $(this).find(".row:last").css({'margin':'0'});
+        
+              } else { //If row does not exist...
+        
+                $(this).calcSubWidth();
+                //Set Width
+                $(this).find(".sub").css({'width' : rowWidth});
+        
+              }
+            }
+        
+            function megaHoverOut(){ 
+              $(this).find(".sub").stop().fadeTo('fast', 0, function() {
+                $(this).hide(); 
+              });
+            }
+        
+        
+            var config = {    
+               sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+               interval: 100, // number = milliseconds for onMouseOver polling interval    
+               over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+               timeout: 00, // number = milliseconds delay before onMouseOut    
+               out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+            };
+        
+            $("ul#topnav li .sub").css({'opacity':'0'});
+            $("ul#topnav li").hoverIntent(config);
+        
+        
+        
+          });
 
 
   
@@ -183,24 +197,48 @@
             %a#one.topnav{:href => @link1[1]}
               =@link1[0]
           %li
-            %a#three.topnav{:href => @link3[1]}
-              =@link3[0]
-          %li
-            %a#two.topnav{:href => @link2[1]}
+            %a#three.topnav{:href => @link2[1]}
               =@link2[0]
             .sub
               %ul
-                / / %li
-                / /   %h2 Header
-                / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
+                %li
+                  %a{:href => @link2A[1]}
+                    =@link2A[0]
+                %li
+                  %a{:href => @link2B[1]}
+                    =@link2B[0]
+                %li
+                  %a{:href => @link2C[1]}
+                    =@link2C[0]
+                %li
+                  %a{:href => @link2D[1]}
+                    =@link2D[0]
+                %li
+                  %a{:href => @link2E[1]}
+                    =@link2E[0]
           %li
-            %a#four.topnav{:href => @link4[1]}
-              =@link4[0]
+            %a#two.topnav{:href => @link3[1]}
+              =@link3[0]
+            .sub
+              %ul
+                %li
+                  %a{:href => @link3A[1]}
+                    =@link3A[0]
+                %li
+                  %a{:href => @link3B[1]}
+                    =@link3B[0]
+                %li
+                  %a{:href => @link3C[1]}
+                    =@link3C[0]
+                %li
+                  %a{:href => @link3D[1]}
+                    =@link3D[0]
+                %li
+                  %a{:href => @link3E[1]}
+                    =@link3E[0]
+          / %li
+          /   %a#four.topnav{:href => @link4[1]}
+          /     =@link4[0]
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
@@ -216,10 +254,9 @@
                 %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
             .row
               %p
-                %a{:href => @linkB1[1]}
-                  =@linkB1[0]
+                =@linkB1[0]
                 =" | "
-                %a{:href => @linkB2[1]}
+                %a{:href => @linkB2[1], :target =>"_blank"}
                   =@linkB2[0]
             .row
               %p
