@@ -19,25 +19,25 @@
 		padding: $v-gap 0 ($v-gap/2)
 		.captionLeft
 			@extend .caption
-			@extend .corner-right
-			left: 0
+			@extend .corner-bottom
+			left: 30px
 		.captionRight
 			@extend .caption
-			@extend .corner-left
-			right: 0	
+			@extend .corner-bottom
+			right: 30px	
 
 .caption
 	@extend .box
 	position: absolute
-	width: 500px
-	top: 100px
+	width: 350px
+	top: 0px
 	margin: 0
 	padding: $corner-radius*2 $corner-radius*4
 	background: url(/images/nav_bg2.png) repeat
 	h1
 		@extend .box
 		@extend .font-base
-		margin: 0 0 $corner-radius 0
+		margin: 50px 0 $corner-radius 0
 		padding: 0
 		color: $image-slider-title
 		font-size: 30px

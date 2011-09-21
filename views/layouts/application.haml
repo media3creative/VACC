@@ -4,7 +4,7 @@
 - @link1 = ["Home", "/home"]
 - @link2 = ["About Us", "/about"]
 - @link3 = ["Events", "/events"]
-- @link4 = ["ssss", "/ssss"]
+- @link4 = ["Board of Directors", "/directors"]
 - @link5 = ["Contact", "/contact"]
 
 // SUBNAV LINKS
@@ -193,9 +193,9 @@
           %a{:href => @link1[1]}
             %img{:src => "/images/logo.png", :alt => ""+@sitename+" Logo"}
         %ul#topnav
-          %li
-            %a#one.topnav{:href => @link1[1]}
-              =@link1[0]
+          / %li
+          /   %a#one.topnav{:href => @link1[1]}
+          /     =@link1[0]
           %li
             %a#three.topnav{:href => @link2[1]}
               =@link2[0]
@@ -217,6 +217,9 @@
                   %a{:href => @link2E[1]}
                     =@link2E[0]
           %li
+            %a#four.topnav{:href => @link4[1]}
+              =@link4[0]
+          %li
             %a#two.topnav{:href => @link3[1]}
               =@link3[0]
             .sub
@@ -236,9 +239,6 @@
                 %li
                   %a{:href => @link3E[1]}
                     =@link3E[0]
-          / %li
-          /   %a#four.topnav{:href => @link4[1]}
-          /     =@link4[0]
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]

@@ -102,7 +102,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-top-right-radius: 6px;
 }
 
-.corner-right, .image-slider .center .captionLeft {
+.corner-right {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -113,7 +113,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-bottom {
+.corner-bottom, .image-slider .center .captionLeft, .image-slider .center .captionRight {
   -moz-border-radius-bottomleft: 6px;
   -khtml-border-radius-bottomleft: 6px;
   -webkit-border-bottom-left-radius: 6px;
@@ -124,7 +124,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-left, .image-slider .center .captionRight {
+.corner-left {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -309,7 +309,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-top-right-radius: 6px;
 }
 
-.corner-right, .image-slider .center .captionLeft {
+.corner-right {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -320,7 +320,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-bottom {
+.corner-bottom, .image-slider .center .captionLeft, .image-slider .center .captionRight {
   -moz-border-radius-bottomleft: 6px;
   -khtml-border-radius-bottomleft: 6px;
   -webkit-border-bottom-left-radius: 6px;
@@ -331,7 +331,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-left, .image-slider .center .captionRight {
+.corner-left {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -364,22 +364,22 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 30px 0 15px;
 }
 .image-slider .center .captionLeft {
-  left: 0;
+  left: 30px;
 }
 .image-slider .center .captionRight {
-  right: 0;
+  right: 30px;
 }
 
 .caption, .image-slider .center .captionLeft, .image-slider .center .captionRight {
   position: absolute;
-  width: 500px;
-  top: 100px;
+  width: 350px;
+  top: 0px;
   margin: 0;
   padding: 12px 24px;
   background: url(/images/nav_bg2.png) repeat;
 }
 .caption h1, .image-slider .center .captionLeft h1, .image-slider .center .captionRight h1 {
-  margin: 0 0 6px 0;
+  margin: 50px 0 6px 0;
   padding: 0;
   color: #efefef;
   font-size: 30px;

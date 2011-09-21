@@ -124,7 +124,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-left {
+.corner-left, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -181,7 +181,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   box-sizing: border-box;
 }
 
-.opaque, .container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right a.container:hover {
+.opaque, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right a.container:hover {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
@@ -331,7 +331,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-left {
+.corner-left, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -371,9 +371,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .body .center .content .left a.container {
   margin: 0px 29px 0 0;
+  background: url("/images/home_left.jpg") top no-repeat;
 }
 .body .center .content .middle a.container {
   margin: 0px 29px 0 0;
+  background: url("/images/home_center.jpg") no-repeat;
 }
 .body .center .content .right a.container {
   margin: 0;
@@ -392,12 +394,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
   position: absolute;
   top: 22.5px;
-  left: 22.5px;
-  margin: 0 45px 0 0;
-  padding-right: 1em;
-  color: #efefef;
+  right: -1px;
+  padding: 3px 22.5px 3px 0.5em;
+  display: inline;
+  color: #003d68;
+  background: #efefef;
   font-size: 24px;
   font-weight: 100;
+  border: 1px solid #dddddd;
 }
 .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3 {
   position: absolute;
@@ -415,8 +419,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   left: 0;
   padding: 3px 1em 3px 22.5px;
   display: inline;
-  color: #003d68;
-  background: #efefef;
+  color: #efefef;
+  background: #003d68;
   font-size: 11px;
   font-weight: 200;
   text-decoration: none;
