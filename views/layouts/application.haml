@@ -4,7 +4,8 @@
 - @link1 = ["Home", "/home"]
 - @link2 = ["About Us", "/about"]
 - @link3 = ["Events", "/events"]
-- @link4 = ["Board of Directors", "/directors"]
+- @link4 = ["Support", "/support"]
+- @link6 = ["FAQ", "/faq"]
 - @link5 = ["Contact", "/contact"]
 
 // SUBNAV LINKS
@@ -19,6 +20,7 @@
 - @link2C = ["Vision", "/vision"]
 - @link2D = ["Mission", "/mission"]
 - @link2E = ["Economic Prosperity", "/prosperity"]
+- @link2F = ["Board of Directors", "/directors"]
 
 
 // FOOTER LINKS
@@ -216,9 +218,9 @@
                 %li
                   %a{:href => @link2E[1]}
                     =@link2E[0]
-          %li
-            %a#four.topnav{:href => @link4[1]}
-              =@link4[0]
+                %li
+                  %a{:href => @link2F[1]}
+                    =@link2F[0]
           %li
             %a#two.topnav{:href => @link3[1]}
               =@link3[0]
@@ -239,6 +241,12 @@
                 %li
                   %a{:href => @link3E[1]}
                     =@link3E[0]
+          %li
+            %a#four.topnav{:href => @link4[1]}
+              =@link4[0]
+          %li
+            %a#five.topnav{:href => @link6[1]}
+              =@link6[0]
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
