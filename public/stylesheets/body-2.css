@@ -1,4 +1,4 @@
-.font-helvetica, .font-base, .subnav h3, .text h3, .img h3, .button h3, .form h3, .link, .text p, .img p, .main .content .section p, .main .content .main p, .main .content .section ul, .main .content .main ul, .main {
+.font-helvetica, .font-base, .subnav h3, .text h3, .img h3, .button h3, .form h3, .link, .text p, .img p, .main .content .section p, .main .content .main p, .main .content .section ul, .main .content .main ul, .subnav h1, .text h1, .img h1, .button h1, .form h1, .main, .main .content .section h1, .main .content .main h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, .subnav h1, .text h1, .img h1, .button h1, .form h1, .main .content .section h1, .main .content .main h1 {
+.font-trajan {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
@@ -63,7 +63,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: #b4d5ff;
 }
 
-.corner-top-left, .banner .center .content img.banner {
+.corner-top-left {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -135,7 +135,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
+.corner-all, .banner .center .content img.banner, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -205,7 +205,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .font-base, .subnav h3, .text h3, .img h3, .button h3, .form h3, .link, .text p, .img p, .main .content .section p, .main .content .main p, .main .content .section ul, .main .content .main ul, .main {
+.font-helvetica, .font-base, .subnav h3, .text h3, .img h3, .button h3, .form h3, .link, .text p, .img p, .main .content .section p, .main .content .main p, .main .content .section ul, .main .content .main ul, .subnav h1, .text h1, .img h1, .button h1, .form h1, .main, .main .content .section h1, .main .content .main h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -225,7 +225,7 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, .subnav h1, .text h1, .img h1, .button h1, .form h1, .main .content .section h1, .main .content .main h1 {
+.font-trajan {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
@@ -270,7 +270,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: #b4d5ff;
 }
 
-.corner-top-left, .banner .center .content img.banner {
+.corner-top-left {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -342,7 +342,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
+.corner-all, .banner .center .content img.banner, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -374,16 +374,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 200px;
   margin: 0;
   padding: 0;
-  border-top: 4px solid #0079ce;
-}
-
-#banner-bottom {
-  position: relative;
-  top: -2px;
-  width: 900px;
-  height: 25px;
-  margin: 0 auto;
-  background: url(/images/stripe.jpg) repeat;
+  border: 1px solid #dddddd;
 }
 
 .body {
@@ -427,7 +418,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
   padding: 1em 0;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 100;
   text-transform: capitalize;
   text-align: left;
 }
@@ -481,10 +472,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .link p a {
   font-size: 12px;
-  color: #aaaaaa;
+  color: #be1e2d !important;
 }
 .link p a:hover {
-  color: #be1e2d;
+  color: #003d68 !important;
   text-decoration: none;
 }
 
@@ -500,6 +491,13 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .text p:last-child, .img p:last-child {
   margin-bottom: 15px;
+}
+.text p a, .img p a {
+  color: #be1e2d !important;
+}
+.text p a:hover, .img p a:hover {
+  color: #003d68 !important;
+  text-decoration: none;
 }
 
 .button p.link {
@@ -576,16 +574,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0 0 0.2em 6px;
   color: #be1e2d !important;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 100;
   text-align: left;
-  letter-spacing: -0.05em;
-  border-bottom: 1px solid #fff200;
+  border-bottom: 1px solid #dddddd;
 }
 .main .content .section p, .main .content .main p {
   width: 584px;
   margin: 6px 0 10px 0;
   padding: 0 0 0 6px;
-  color: #dddddd;
+  color: #aaaaaa;
   font-size: 14px;
   font-weight: 200;
   text-align: justify;
@@ -605,7 +602,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 584px;
   margin: 6px 0 10px 0;
   padding: 0 0 0 6px;
-  color: #dddddd;
+  color: #aaaaaa;
   font-size: 14px;
   font-weight: 200;
   text-align: left;

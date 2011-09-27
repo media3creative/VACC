@@ -2,9 +2,9 @@
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["About Us", "/about"]
+- @link2 = ["About", "/about"]
 - @link3 = ["Events", "/events"]
-- @link4 = ["Support", "/support"]
+- @link4 = ["Support VACC", "/support"]
 - @link6 = ["FAQ", "/faq"]
 - @link5 = ["Contact", "/contact"]
 
@@ -22,6 +22,10 @@
 - @link2E = ["Economic Prosperity", "/prosperity"]
 - @link2F = ["Board of Directors", "/directors"]
 
+- @link4A = ["Partners", "/partners"]
+- @link4B = ["Corporate Sponsorship", "/sponsor"]
+- @link4C = ["Volunteer", "/volunteer"]
+
 
 // FOOTER LINKS
 - @linkA1 = ["281-530-4421 ", "ssss"]
@@ -31,14 +35,14 @@
 - @linkA5 = ["link name", "/path"]
 
 - @linkB1 = ["9750 Bellaire Blvd. Ste 218 Houston, TX 77036", "ssss"]
-- @linkB2 = ["MAP", "http://maps.google.com/maps?q=9750+Bellaire+Blvd.+Ste+218&hl=en&t=m&z=17&vpsrc=0"]
+- @linkB2 = ["MAP", "http://maps.google.com/maps?q=9750+Bellaire+Blvd.+SUITE+218+Houston,+TX+77036+&hl=en&sll=29.045222,-95.451229&sspn=0.009839,0.008862&vpsrc=0&t=m&z=17"]
 - @linkB3 = ["link name", "/path"]
 - @linkB4 = ["link name", "/path"]
 - @linkB5 = ["link name", "/path"]
 
-- @linkC1 = ["link name", "/path"]
-- @linkC2 = ["link name", "/path"]
-- @linkC3 = ["link name", "/path"]
+- @linkC1 = ["Facebook", "http://www.facebook.com/"]
+- @linkC2 = ["Twitter", "http://twitter.com/"]
+- @linkC3 = ["in Vietnamese", "/vietnamese"]
 - @linkC4 = ["link name", "/path"]
 - @linkC5 = ["link name", "/path"]
 
@@ -206,9 +210,9 @@
                 %li
                   %a{:href => @link2A[1]}
                     =@link2A[0]
-                %li
-                  %a{:href => @link2B[1]}
-                    =@link2B[0]
+                / %li
+                /   %a{:href => @link2B[1]}
+                /     =@link2B[0]
                 %li
                   %a{:href => @link2C[1]}
                     =@link2C[0]
@@ -244,8 +248,19 @@
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
+            .sub
+              %ul
+                %li
+                  %a{:href => @link4A[1]}
+                    =@link4A[0]
+                %li
+                  %a{:href => @link4B[1]}
+                    =@link4B[0]
+                %li
+                  %a{:href => @link4C[1]}
+                    =@link4C[0]
           %li
-            %a#five.topnav{:href => @link6[1]}
+            %a#six.topnav{:href => @link6[1]}
               =@link6[0]
           %li
             %a#five.topnav{:href => @link5[1]}
@@ -272,6 +287,16 @@
                 =" - "
                 %a{:href => @linkA2[1]}
                   =@linkA2[0]
+            .row
+              %p
+                %a{:href => @linkC1[1], :target => "_blank"} 
+                  %img.icon{:src => "/images/facebook-color.png"}
+                %a{:href => @linkC2[1], :target => "_blank"} 
+                  %img.icon{:src => "/images/twitter-color.png"}
+                = " - "
+                %a{:href => @linkC3[1]} 
+                  =@linkC3[0]
+              
               
                   
     .m3c-bar
