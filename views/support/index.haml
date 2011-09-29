@@ -1,0 +1,62 @@
+- @sub0 = ["Our Partners", "/partners"]
+- @sub1 = ["Partners", "partners"]
+- @sub2 = ["Corporate Sponsorship", "sponsor"]
+- @sub3 = ["Volunteer", "volunteer"]
+
+- @title = " | "+@sub0[0]
+- @subtitle = ""
+- @body_class = "four"
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+.banner
+  .center
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-4.jpg"}
+
+
+
+.body
+  .center
+    .content
+      #four.sidebar.right
+        .subnav
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub3[1]}
+                =@sub3[0]
+
+      #four.main
+        .content
+          %a{:name => @sub1[1]}
+          .section.no-image
+            %h1=@sub1[0]
+            %p 
+              / %img.logo{:src => "/images/pt-1.png"}
+              %b Ovalle Media Group
+              = " | "
+              %a{:href => "http://www.ovallemg.com", :target => "_blank"} Website
+              %br
+              M3C is a revolutionary marketing system the includes all the high-end design services, printed materials, and web design from a top marketing agency at a very affordable price. M3C is structured in a unique way that allows for strategies and concepts never before seen in the marketing industry.
+
+          %a{:name => @sub2[1]}
+          .section.no-image
+            %h1=@sub2[0]
+            %p I don't know, I'd like to have a Wufoo form for...
+
+          %a{:name => @sub3[1]}
+          .section.no-image
+            %h1=@sub3[0]
+            %p 

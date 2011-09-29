@@ -15,12 +15,12 @@
 - @link3D = ["Educational Workshops", "/workshops"]
 - @link3E = ["Community Outreach", "/outreach"]
 
-- @link2A = ["Background", "/background"]
-- @link2B = ["About", "/about"]
-- @link2C = ["Vision", "/vision"]
-- @link2D = ["Mission", "/mission"]
-- @link2E = ["Economic Prosperity", "/prosperity"]
-- @link2F = ["Board of Directors", "/directors"]
+- @link2A = ["Background", "background"]
+- @link2B = ["About", "about"]
+- @link2C = ["Vision", "vision"]
+- @link2D = ["Mission", "mission"]
+- @link2E = ["Economic Prosperity", "prosperity"]
+- @link2F = ["Board of Directors", "directors"]
 
 - @link4A = ["Partners", "/partners"]
 - @link4B = ["Corporate Sponsorship", "/sponsor"]
@@ -40,7 +40,7 @@
 - @linkB4 = ["link name", "/path"]
 - @linkB5 = ["link name", "/path"]
 
-- @linkC1 = ["Facebook", "http://www.facebook.com/"]
+- @linkC1 = ["Facebook", "http://www.facebook.com/pages/Vietnamese-American-Chamber-of-Commerce-VACC/150817348333747?sk=wall"]
 - @linkC2 = ["Twitter", "http://twitter.com/"]
 - @linkC3 = ["in Vietnamese", "/vietnamese"]
 - @linkC4 = ["link name", "/path"]
@@ -208,43 +208,43 @@
             .sub
               %ul
                 %li
-                  %a{:href => @link2A[1]}
+                  %a{:href => @link2[1]+"#"+@link2A[1]}
                     =@link2A[0]
                 / %li
-                /   %a{:href => @link2B[1]}
+                /   %a{:href => @link2[1]+"#"+@link2B[1]}
                 /     =@link2B[0]
                 %li
-                  %a{:href => @link2C[1]}
+                  %a{:href => @link2[1]+"#"+@link2C[1]}
                     =@link2C[0]
                 %li
-                  %a{:href => @link2D[1]}
+                  %a{:href => @link2[1]+"#"+@link2D[1]}
                     =@link2D[0]
                 %li
-                  %a{:href => @link2E[1]}
+                  %a{:href => @link2[1]+"#"+@link2E[1]}
                     =@link2E[0]
                 %li
-                  %a{:href => @link2F[1]}
+                  %a{:href => @link2[1]+"#"+@link2F[1]}
                     =@link2F[0]
-          %li
-            %a#two.topnav{:href => @link3[1]}
-              =@link3[0]
-            .sub
-              %ul
-                %li
-                  %a{:href => @link3A[1]}
-                    =@link3A[0]
-                %li
-                  %a{:href => @link3B[1]}
-                    =@link3B[0]
-                %li
-                  %a{:href => @link3C[1]}
-                    =@link3C[0]
-                %li
-                  %a{:href => @link3D[1]}
-                    =@link3D[0]
-                %li
-                  %a{:href => @link3E[1]}
-                    =@link3E[0]
+          / %li
+          /   %a#two.topnav{:href => @link3[1]}
+          /     =@link3[0]
+          /   .sub
+          /     %ul
+          /       %li
+          /         %a{:href => @link3A[1]}
+          /           =@link3A[0]
+          /       %li
+          /         %a{:href => @link3B[1]}
+          /           =@link3B[0]
+          /       %li
+          /         %a{:href => @link3C[1]}
+          /           =@link3C[0]
+          /       %li
+          /         %a{:href => @link3D[1]}
+          /           =@link3D[0]
+          /       %li
+          /         %a{:href => @link3E[1]}
+          /           =@link3E[0]
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]

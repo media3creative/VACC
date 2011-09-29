@@ -95,12 +95,14 @@ table {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, i::selection, a::selection {
   background: #b4d5ff;
+  color: black;
 }
 
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, i::-moz-selection, a::-moz-selection {
   background: #b4d5ff;
+  color: black;
 }
 
 a {
@@ -299,12 +301,14 @@ select, input, textarea {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, i::selection, a::selection {
   background: #b4d5ff;
+  color: black;
 }
 
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, i::-moz-selection, a::-moz-selection {
   background: #b4d5ff;
+  color: black;
 }
 
 .corner-top-left {
@@ -449,6 +453,10 @@ b {
   font-weight: bold;
 }
 
+i {
+  font-style: oblique;
+}
+
 .font-helvetica, .font-base, body, .m3c-bar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -506,12 +514,14 @@ b {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, i::selection, a::selection {
   background: #b4d5ff;
+  color: black;
 }
 
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, i::-moz-selection, a::-moz-selection {
   background: #b4d5ff;
+  color: black;
 }
 
 .corner-top-left {
@@ -1333,12 +1343,14 @@ p:last-child {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, i::selection, a::selection {
   background: #b4d5ff;
+  color: black;
 }
 
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, i::-moz-selection, a::-moz-selection {
   background: #b4d5ff;
+  color: black;
 }
 
 .m3c-bar {

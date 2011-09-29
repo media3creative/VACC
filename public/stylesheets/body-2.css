@@ -55,12 +55,14 @@
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, i::selection, a::selection {
   background: #b4d5ff;
+  color: black;
 }
 
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, i::-moz-selection, a::-moz-selection {
   background: #b4d5ff;
+  color: black;
 }
 
 .corner-top-left {
@@ -205,6 +207,10 @@ b {
   font-weight: bold;
 }
 
+i {
+  font-style: oblique;
+}
+
 .font-helvetica, .font-base, .subnav h3, .text h3, .img h3, .button h3, .form h3, .link, .text p, .img p, .main .content .section p, .main .content .main p, .main .content .section ul, .main .content .main ul, .subnav h1, .text h1, .img h1, .button h1, .form h1, .main, .main .content .section h1, .main .content .main h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -262,12 +268,14 @@ b {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, i::selection, a::selection {
   background: #b4d5ff;
+  color: black;
 }
 
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, i::-moz-selection, a::-moz-selection {
   background: #b4d5ff;
+  color: black;
 }
 
 .corner-top-left {
@@ -410,6 +418,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 0 30px 30px;
 }
 
+.subnav, .text, .img, .button, .form {
+  padding: 10px 0 0 0;
+}
 .subnav h1, .text h1, .img h1, .button h1, .form h1 {
   position: relative;
   color: #003d68;
@@ -597,6 +608,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
   color: #003d68;
+}
+.main .content .section p img.logo, .main .content .main p img.logo {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 99px;
+  height: 55px;
+  margin: 0 1em 0.1em 0;
 }
 .main .content .section ul, .main .content .main ul {
   width: 584px;

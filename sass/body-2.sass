@@ -71,6 +71,7 @@
 // Subnavigation-style sidebar box
 .subnav, .text, .button, .form
 	@extend .container-setup
+	padding: 10px 0 0 0
 	h1
 		@extend .box
 		@extend .corner-top
@@ -272,6 +273,12 @@
 					text-decoration: none
 					&:hover
 						color: $primary
+				img.logo
+					position: relative
+					+float-left
+					width: 99px
+					height: 55px
+					margin: 0 1em .1em 0
 			ul
 				@extend .font-base
 				@extend .box

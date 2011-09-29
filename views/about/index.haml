@@ -1,6 +1,9 @@
-- @sub0 = ["Our Company", "/company"]
-- @sub1 = ["sss", "sss"]
-- @sub2 = ["sss", "sss"]
+- @sub0 = ["About", "/about"]
+- @sub1 = ["Background", "background"]
+- @sub2 = ["Vision", "vision"]
+- @sub3 = ["Mission", "mission"]
+- @sub4 = ["Economic Prosperity", "prosperity"]
+- @sub5 = ["Board of Directors", "directors"] 
 
 
 - @title = " | "+@sub0[0]
@@ -8,27 +11,121 @@
 - @body_class = "three"
 
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+%script{:src => "javascripts/expandCollapse.js", :type => "text/javascript"}
 
 
 .banner
   .center
     .content
-      %img.banner{:alt => "", :src => "/images/banner-3.jpg"}
+      %img.banner{:alt => "", :src => "/images/banner-1.jpg"}
 
 
 
 .body
   .center
     .content
-      .sidebar.right
-        .text
-          %h1 Mission Statement
-          %h3
-      
+      #four.sidebar.right
+        .subnav
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub3[1]}
+                =@sub3[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub4[1]}
+                =@sub4[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub5[1]}
+                =@sub5[0]
 
-      .main
+
+      #four.main
         .content
-          %a{:name => @sub0[1]}
           .section.no-image
             %h1=@sub0[0]
-            %p Steadfast has proudly supported doctors in the health care industry for over 2 decades, and building a strong and efficient medical practice that is successful in volumes and accounts receivables is our end result.  
+            %p The Vietnamese-American Chamber of Commerce (VACC) is a non-profit organization 501(c)(6) that serves the economic efforts of the Vietnamese-American community within the Greater Houston Area by providing opportunities for individuals to network, learn and exchange significant ideas and information that promote business profitability and "economic prosperity." 
+            %p The VACC acts as an instrument by which individuals, businesses and corporations from all sectors are able to connect with one another and participate directly in the process of economic expansion that occurs through the positive interchange of information. Members are able to utilize the VACC not only as a tool to meet other members involved in business, but also as an actual resource to efficiently obtain and discover specific information and/or guidance related to their particular field(s) of interest. 
+            %p The VACC provides a supportive environment for individuals to find solutions and overcome economic challenges, to discover and/or create new or existing business opportunities, and to collaborate on all issues affecting the economic sphere, such as public policy and legislation.
+            %p
+              %i Please read further to discover our vision and mission statements.
+            
+          %a{:name => @sub1[1]}
+          .section.no-image
+            %h1=@sub1[0]
+            %p In 1975, at the fall of Vietnam, the United States saw a large influx of Vietnamese refugees with a large majority traveling to Los Angeles and San Francisco, California and the Houston area.  The Vietnamese population is unique among immigrant groups in the United States.  Whereas many cultural enclaves have had the benefit of assimilating to American society, culture, and service provision organically and over a generous period of time, the Vietnamese had to assimilate at an accelerated pace.  The circumstances of their migration coupled with the traumatic of war experiences resulted in a population that arrived in the United States with much overcome and the need for resources and services.  Adjustment to the new environment is especially hard for those who are older; however, the Vietnamese ideology of the family unit is based on collectivism, family obligation is defined by the idea that "the needs and desires of the kin group took precedence over personal ones" has a significant impact on the process of acculturation. 
+            #hide1{:style => "display:none"}
+              %p Forced to flee from their homeland and often thrust into poor urban neighborhoods, these newcomers have nevertheless managed to establish strong communities in a short amount of time.  According to a study, Vietnamese Americans are among the most assimilated immigrant groups in the United States.  While their rates of cultural and economic assimilation were unexceptional compared to other groups (perhaps due to language differences between English and Vietnamese), their rates of civic assimilation were the highest among all the large immigrant groups.  Vietnamese Americans, being political refugees, view their stay in the United States as permanent and became involved in the political process in higher rates than other groups. In the past 3 decades, the first generation of Vietnamese Americans has overcome the hardships of language barrier, cultural and economic assimilation. We have successfully adapted, evolved and significantly contributed on both front, economic and politic.
+              %p The Vietnamese American community currently plays an influential role in Houston, with its restaurants and shops becoming a part of the mainstream popular local culture throughout the city.  Between 1980 and 2010, the Vietnamese population in the United States of America has increased by six folds.  Census 2010 data showed that the population numbered over 1.5 million, making them the fourth largest Asian group in the country and the fastest population growth than any other major race group.  Currently there are 103,525 Vietnamese-Americans residing in Houston-Sugar Land-Baytown and out of that, there are 80,409 in Harris County, Texas.
+            %p
+              %a{:onclick => "return toggleMe('hide1')"} Learn More
+
+          %a{:name => @sub2[1]}
+          .section.no-image
+            %h1=@sub2[0]
+            %p Our vision serves as the framework of our mission to provide invaluable information to our members, support innovative entrepreneurship, and forge strategic business alliances in the Vietnamese-American business community.
+
+          %a{:name => @sub3[1]}
+          .section.no-image
+            %h1=@sub3[0]
+            %p
+              %i The mission of the Vietnamese American Chamber of Commerce is to advance economic growth and connect Houston’s Vietnamese-American businesses through effective development, collaboration, networking, and education.
+            #hide3{:style => "display:none"}
+              %p A blend of business, networking, community, educational, and social activities benefit the members. In addition, the Vietnamese American Chamber of Commerce is proactive in creating partnerships with the other organizations and management districts in the area to benefit the entire Southwest Houston <or Greater Houston Area> community.
+
+              %p The Chamber’s strong partnerships with the many educational institutions of < list of Universities, HISD, Alief ISD and others – see demographic data below to select >, completes the community we support as we work with these institutions to produce and provide opportunities to the Greater Houston and Southwest Area residents, thus strengthening the workforce and replenishing community leaders and contributors.
+              %p A membership that is growing quickly, consisting of small businesses and large corporations makes this one of the most diverse chambers in the Greater Houston Area. At first glance our numbers may seem modest, but with large members such as < solicit to small biz, corps and put their names here, ex: HISD, any Merchant Card Processing companies, AT&T, Baker Hughes, CenterPoint Energy, Continental Airlines, Halliburton, HCC, and Reliant Energy >, we actually represent tens of thousands of employees, making the Vietnamese American Chamber of Commerce one of the fastest member growing organization in the Greater Houston Area. 
+             
+            %p
+              %a{:onclick => "return toggleMe('hide3')"} Learn More
+
+          %a{:name => @sub4[1]}
+          .section.no-image
+            %h1=@sub4[0]
+
+          %a{:name => @sub5[1]}
+          .section.no-image
+            %h1=@sub5[0]
+            %p
+              %b Chairman
+              Quan Dang
+            %p
+              %b President
+              Stephen Le Jr.
+            %p
+              %b Vice-Chair
+              Christina Sulien
+            %p
+              %b Vice-Chair
+              Laura Le
+            %p
+              %b Vice-Chair
+              Janet Nguyen
+            %p
+              %b Treasurer
+              Thao Pham
+            %p
+              %b Secretary
+              Nguyen T. Nguyen
+            %p
+              %b Board Member
+              Toan Le
+            %p
+              %b Board Member
+              Francois Le
+            %p
+              %b Board Member
+              Catherine Le
