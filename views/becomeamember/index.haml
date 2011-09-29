@@ -1,0 +1,33 @@
+- @title = " | Contact"
+- @subtitle = ""
+- @body_class = "none"
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+#two.banner
+  .center
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-5.jpg"}
+
+
+
+.body
+  .center
+    .content
+      #five.sidebar.right
+        .button
+          %h1 Membership Application Form
+          .pdf
+            %a{:href => "/images/form-member.pdf"}
+              %img{:src => "/images/PDF.png"}
+              %p View / Download PDF
+                
+
+      #five.main
+        .content
+          %a{:name => "anchor1"}
+          .section.no-image
+            %h1 Become a Member
+            %p.contact-form
+              %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "1230", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/p7w6p5/", :width => "100%", :border => "none"}       

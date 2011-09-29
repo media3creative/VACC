@@ -43,7 +43,7 @@
 - @linkB5 = ["link name", "/path"]
 
 - @linkC1 = ["Facebook", "http://www.facebook.com/pages/Vietnamese-American-Chamber-of-Commerce-VACC/150817348333747?sk=wall"]
-- @linkC2 = ["Twitter", "http://twitter.com/"]
+- @linkC2 = ["Twitter", "http://twitter.com/VACC_Houston"]
 - @linkC3 = ["in Vietnamese", "/vietnamese"]
 - @linkC4 = ["link name", "/path"]
 - @linkC5 = ["link name", "/path"]
@@ -292,15 +292,19 @@
                 =" - "
                 %a{:href => @linkA2[1]}
                   =@linkA2[0]
-            .row
-              %p
                 %a{:href => @linkC1[1], :target => "_blank"} 
                   %img.icon{:src => "/images/facebook-color.png"}
                 %a{:href => @linkC2[1], :target => "_blank"} 
                   %img.icon{:src => "/images/twitter-color.png"}
-                = " - "
-                %a{:href => @linkC3[1]} 
-                  =@linkC3[0]
+            / .row
+            /   %p
+            /     %a{:href => @linkC1[1], :target => "_blank"} 
+            /       %img.icon{:src => "/images/facebook-color.png"}
+            /     %a{:href => @linkC2[1], :target => "_blank"} 
+            /       %img.icon{:src => "/images/twitter-color.png"}
+            /     = " - "
+            /     %a{:href => @linkC3[1]} 
+            /       =@linkC3[0]
               
               
                   
