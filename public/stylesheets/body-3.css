@@ -211,6 +211,14 @@ i {
   font-style: oblique;
 }
 
+.NOLINK {
+  color: #aaaaaa !important;
+  cursor: default;
+}
+.NOLINK:hover {
+  background: transparent !important;
+}
+
 .font-helvetica, .font-base, .text-box h1, .text-box p, .main .content .section p, .main .content .main p, .main, .main .content .section h1, .main .content .main h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

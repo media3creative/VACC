@@ -457,6 +457,14 @@ i {
   font-style: oblique;
 }
 
+.NOLINK {
+  color: #aaaaaa !important;
+  cursor: default;
+}
+.NOLINK:hover {
+  background: transparent !important;
+}
+
 .font-helvetica, .font-base, body, .m3c-bar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

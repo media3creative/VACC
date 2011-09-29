@@ -1,19 +1,21 @@
 - @sitename = "Vietnamese American Chamber of Commerce"
 
 // MAIN NAVIGATION
+- @linkNULL = ["", "#"]
 - @link1 = ["Home", "/home"]
 - @link2 = ["About", "/about"]
 - @link3 = ["Events", "/events"]
 - @link4 = ["Support VACC", "/support"]
 - @link6 = ["FAQ", "/faq"]
 - @link5 = ["Contact", "/contact"]
+- @link7 = ["Directory", "/directory"]
 
 // SUBNAV LINKS
-- @link3A = ["Quarterly Luncheons", "/luncheons"]
-- @link3B = ["Networking Opportunities", "/networking"]
-- @link3C = ["Annual Gala", "/gala"]
-- @link3D = ["Educational Workshops", "/workshops"]
-- @link3E = ["Community Outreach", "/outreach"]
+- @link3A = ["Quarterly Luncheons", "luncheons"]
+- @link3B = ["Networking Opportunities", "networking"]
+- @link3C = ["Annual Gala", "gala"]
+- @link3D = ["Educational Workshops", "workshops"]
+- @link3E = ["Community Outreach", "outreach"]
 
 - @link2A = ["Background", "background"]
 - @link2B = ["About", "about"]
@@ -22,9 +24,9 @@
 - @link2E = ["Economic Prosperity", "prosperity"]
 - @link2F = ["Board of Directors", "directors"]
 
-- @link4A = ["Partners", "/partners"]
-- @link4B = ["Corporate Sponsorship", "/sponsor"]
-- @link4C = ["Volunteer", "/volunteer"]
+- @link4A = ["Partners", "partners"]
+- @link4B = ["Corporate Sponsorship", "sponsor"]
+- @link4C = ["Volunteer", "volunteer"]
 
 
 // FOOTER LINKS
@@ -225,42 +227,45 @@
                 %li
                   %a{:href => @link2[1]+"#"+@link2F[1]}
                     =@link2F[0]
-          / %li
-          /   %a#two.topnav{:href => @link3[1]}
-          /     =@link3[0]
-          /   .sub
-          /     %ul
-          /       %li
-          /         %a{:href => @link3A[1]}
-          /           =@link3A[0]
-          /       %li
-          /         %a{:href => @link3B[1]}
-          /           =@link3B[0]
-          /       %li
-          /         %a{:href => @link3C[1]}
-          /           =@link3C[0]
-          /       %li
-          /         %a{:href => @link3D[1]}
-          /           =@link3D[0]
-          /       %li
-          /         %a{:href => @link3E[1]}
-          /           =@link3E[0]
+          %li
+            %a#two.topnav{:href => @link3[1]}
+              =@link3[0]
+            / .sub
+            /   %ul
+            /     %li
+            /       %a{:href => @link3A[1]}
+            /         =@link3A[0]
+            /     %li
+            /       %a{:href => @link3B[1]}
+            /         =@link3B[0]
+            /     %li
+            /       %a{:href => @link3C[1]}
+            /         =@link3C[0]
+            /     %li
+            /       %a{:href => @link3D[1]}
+            /         =@link3D[0]
+            /     %li
+            /       %a{:href => @link3E[1]}
+            /         =@link3E[0]
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
             .sub
               %ul
                 %li
-                  %a{:href => @link4A[1]}
+                  %a{:href => @link4[1]+"#"+@link4A[1]}
                     =@link4A[0]
                 %li
-                  %a{:href => @link4B[1]}
+                  %a{:href => @link4[1]+"#"+@link4B[1]}
                     =@link4B[0]
                 %li
-                  %a{:href => @link4C[1]}
+                  %a{:href => @link4[1]+"#"+@link4C[1]}
                     =@link4C[0]
           %li
-            %a#six.topnav{:href => @link6[1]}
+            %a#seven.topnav.NOLINK{:href => @linkNULL[1]}
+              =@link7[0]
+          %li
+            %a#six.topnav.NOLINK{:href => @linkNULL[1]}
               =@link6[0]
           %li
             %a#five.topnav{:href => @link5[1]}

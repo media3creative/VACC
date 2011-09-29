@@ -1,4 +1,4 @@
-- @sub0 = ["Services", "/services"]
+- @sub0 = ["Events", "/events"]
 - @sub1 = ["sss", "sss"]
 - @sub2 = ["sss", "sss"]
 
@@ -22,24 +22,25 @@
   .center
     .content
       #two.sidebar.right
-        .img
-          %h1 Jerald K. Graber
-          %h3
-            Attorney at Law
-            %br
-            Board Certified Criminal Lawyer
+        .text
+          %h1 Contact Us
           %p 
-            917 Franklin, Suite 510
+            %sub PHONE
             %br
-            Houston, Texas  77002
+            281-530-4421
+          %p  
+            %sub EMAIL
+            %br
+            info@vacc-houston.org
           %p
-            713-224-2323
+            %sub ADDRESS
+            %sub=" | "
+            %sub
+              %a{:href => "http://maps.google.com/maps?q=9750+Bellaire+Blvd.+SUITE+218+Houston,+TX+77036+&hl=en&sll=29.045222,-95.451229&sspn=0.009839,0.008862&vpsrc=0&t=m&z=17"} MAP
             %br
-            713-227-9900 (fax)
+            9750 Bellaire Blvd. SUITE 218
             %br
-            713-202-3322 (cell)
-            %br
-            %a{:href => "mailto:graberlaw@sbcglobal.net"}graberlaw@sbcglobal.net
+            Houston, TX 77036
       
 
       #two.main
@@ -48,14 +49,39 @@
           .section.no-image
             %h1=@sub0[0]
             %p
-              Business Development & Marketing
+              %b September 29, 2011
+              at 6:30pm
               %br
-              Credentialing
+              Soft Opening
+            %p
+              %b October 14, 2011
+              at 10:30 am
               %br
-              Practice structure & operations
+              Press Conference 
+            %p
+              %b October 20, 2011
+              at 11:00 am
               %br
-              Workflow Analysis
+              Kick-Off Party
+            %p
+              %b November 14-18, 2011
               %br
-              Creating & Discovering new profit locations
+              Thanksgiving Food Drive
+            %p
+              %b November 19, 2011
               %br
-              Billing & Coding
+              Thanksgiving "Feed the Hungry" 
+            %p
+              %b December 19-23
+              %br
+              Toys for Tots Drive
+            %p
+              %b January 2012
+              (Exact Date TBD)
+              %br
+              Tet Luncheon
+            %p
+              %b February 2012
+              (Exact Date TBD)
+              %br
+              Happy Hour

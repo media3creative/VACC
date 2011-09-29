@@ -211,6 +211,14 @@ i {
   font-style: oblique;
 }
 
+.NOLINK {
+  color: #aaaaaa !important;
+  cursor: default;
+}
+.NOLINK:hover {
+  background: transparent !important;
+}
+
 .font-helvetica, .font-base, .caption h1, .image-slider .center .captionLeft h1, .image-slider .center .captionRight h1, .caption h3, .image-slider .center .captionLeft h3, .image-slider .center .captionRight h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
