@@ -617,7 +617,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   float: right;
   clear: none;
   width: 200px;
-  height: 300px;
   margin: 0 0 15px 15px;
   z-index: 100;
 }
@@ -655,8 +654,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: relative;
   display: inline;
   float: left;
-  width: 99px;
-  height: 55px;
+  width: 150px;
   margin: 0 1em 0.1em 0;
 }
 .main .content .section ul, .main .content .main ul {
