@@ -1,0 +1,95 @@
+- @sub0 = ["Frequently Asked Questions", "/faq"]
+
+
+- @title = " | "+@sub0[0]
+- @subtitle = ""
+- @body_class = "six"
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+%script{:src => "javascripts/expandCollapse.js", :type => "text/javascript"}
+
+
+.banner
+  .center
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-5.jpg"}
+
+
+
+.body
+  .center
+    .content
+      #four.sidebar.right
+        .text
+          %h1 2012 Annual Membership Benefits
+          %p
+            %a{:href => "/benefits"} View here >
+
+
+      #four.main
+        .content
+          %a{:name => @sub0[1]}
+          .section.no-image
+            %h1=@sub0[0]
+            %p Click each question below to view the answer.
+            %p
+              %b
+                %a{:onclick => "return toggleMe('hide1')"} What makes the Vietnamese-American Chamber of Commerce (VACC) different from other Chambers of Commerce?
+            #hide1{:style => "display:none"}
+              %p The VACC is unique from other Chambers of Commerce because each of our Board of Directors chooses to adhere to a Code of Ethics, both personally and in Chamber decision-making and relations. 
+              %p We encourage viewers to read our Code of Ethics.
+              %p Additionally, the VACC not only works to improve issues that directly affect local businesses and the economy, but we also assist the community through outreach programs and educational workshops. 
+              %p Please view our calendar of events to see our next community outreach event.
+
+            %p
+              %b
+                %a{:onclick => "return toggleMe('hide2')"} What is the purpose of the VACC?
+            #hide2{:style => "display:none"}
+              %p The purpose of the VACC is to stimulate and support the local Vietnamese-American community's economy and local businesses.
+
+            %p
+              %b
+                %a{:onclick => "return toggleMe('hide3')"} Can people of other cultures join the VACC?
+            #hide3{:style => "display:none"}
+              %p The VACC does not discriminate against individuals or groups of different backgrounds or cultures. The VACC respects the experiences, diversities and backgrounds of other cultures, and we welcome anyone who is interested in commerce or learning more about the local Vietnamese-American community and/or Vietnamese culture.
+
+            %p
+              %b
+                %a{:onclick => "return toggleMe('hide4')"} How can individuals or businesses who are not Vietnamese-American benefit from joining the VACC?
+            #hide4{:style => "display:none"}
+              %p Both locally and globally, individuals or groups who are not ethnically Vietnamese may benefit from membership with the VACC in many valuable ways. 
+              %p VACC membership provides individuals and groups with unique opportunities to expand their contacts and to market their businesses to the Vietnamese-American community in Houston, and to thereby connect with one of the fastest-growing Asian ethnic groups in the United States*. The VACC is supported by some of the city's most influential  Vietnamese-American business and community leaders, and through numerous networking events, the VACC affords members from all backgrounds the ability to connect and work with these important players.
+              %p
+                Below are some key facts about the Vietnamese-American community in the U.S.:
+                %br
+                &mdash; The Vietnamese-American population in the U.S. is over 1.5 million and growing (U.S. Census Bureau, 2010).
+                %br
+                &mdash; Vietnamese-American businesses in the U.S. generate over $28.8 billion dollars a year (A 2007 report by the Survey of Business Owners (SOB)).
+                %br
+                &mdash; $15 billion dollars of annual purchasing power
+              %p
+                Below are some key facts about the Vietnamese-American community in Houston:
+                %br
+                &mdash; Vietnamese-Americans own nearly one-third of the 25,000 Asian-owned businesses in the Houston area 
+                %br
+                &mdash; Nearly 62% of Vietnamese-American owners in Houston have achieved some college education or greater
+                %br
+                &mdash; Harris County has a growing population of over 80,000 Vietnamese-Americans (U.S. Census Bureau, 2010)
+              %p
+                %sup
+                  * Statistics from the U.S. Census Bureau
+                  %br
+                  **Additionally, all of our members are able to take advantage of the Annual Membership Benefits. The VACC partners with many businesses and organizations in Houston, and all qualified members are eligible for discounts and services.
+
+            %p
+              %b
+                %a{:onclick => "return toggleMe('hide5')"} In what ways does the VACC give back to the community?
+            #hide5{:style => "display:none"}
+              %p The VACC is grounded by a strong belief in ethics, and supports the Vietnamese-American community by serving and supporting the needs of the people. Every year, the VACC holds numerous charitable events such as food drives during Thanksgiving. We are partnered with numerous local non-profit organizations to raise awareness on health issues that affect the community.
+              %p On a personal level, each of our Board Members is involved in volunteerism and community improvement projects.
+
+            %p
+              %b
+                %a{:onclick => "return toggleMe('hide6')"} Does the VACC intend to bridge the generation gap between the younger Vietnamese and older generations?
+            #hide6{:style => "display:none"}
+              %p The VACC believes that there is much wisdom to be preserved in the Vietnamese culture and language. We believe that being able to communicate in English is very important to expand one's perspective as well as business connections, however, Vietnamese language is also important if one is to do business and connect with older generations. We promote the learning of both languages.
