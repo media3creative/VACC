@@ -545,8 +545,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .button .pdf {
   position: relative;
   width: 232px;
-  margin: 0 auto 15px;
+  margin: 0 auto;
   padding: 0;
+}
+.button .pdf:last-child {
+  margin-bottom: 15px;
 }
 .button .pdf a img {
   position: relative;
@@ -563,15 +566,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   float: left;
   clear: right;
   top: 2px;
-  margin: 0 auto 15px;
+  margin: 0 auto;
   color: #aaaaaa;
   font-size: 12px;
   font-weight: 200;
   text-align: justify;
-  line-height: 1.7em;
-}
-.button .pdf a p:last-child {
-  margin-bottom: 15px;
 }
 .button .pdf a:hover p {
   color: #be1e2d;

@@ -11,11 +11,8 @@
 - @link7 = ["Members", "/members"]
 
 // SUBNAV LINKS
-- @link3A = ["Quarterly Luncheons", "luncheons"]
-- @link3B = ["Networking Opportunities", "networking"]
-- @link3C = ["Annual Gala", "gala"]
-- @link3D = ["Educational Workshops", "workshops"]
-- @link3E = ["Community Outreach", "outreach"]
+- @link3A = ["Upcoming Events", "events"]
+- @link3B = ["Press Releases", "press"]
 
 - @link2A = ["Background", "background"]
 - @link2B = ["About", "about"]
@@ -233,23 +230,14 @@
           %li
             %a#two.topnav{:href => @link3[1]}
               =@link3[0]
-            / .sub
-            /   %ul
-            /     %li
-            /       %a{:href => @link3A[1]}
-            /         =@link3A[0]
-            /     %li
-            /       %a{:href => @link3B[1]}
-            /         =@link3B[0]
-            /     %li
-            /       %a{:href => @link3C[1]}
-            /         =@link3C[0]
-            /     %li
-            /       %a{:href => @link3D[1]}
-            /         =@link3D[0]
-            /     %li
-            /       %a{:href => @link3E[1]}
-            /         =@link3E[0]
+            .sub
+              %ul
+                %li
+                  %a{:href => @link3[1]+"#"+@link3A[1]}
+                    =@link3A[0]
+                %li
+                  %a{:href => @link3[1]+"#"+@link3B[1]}
+                    =@link3B[0]
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]

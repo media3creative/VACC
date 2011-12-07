@@ -1,6 +1,6 @@
 - @sub0 = ["Events", "/events"]
-- @sub1 = ["sss", "sss"]
-- @sub2 = ["sss", "sss"]
+- @sub1 = ["Upcoming Events", "events"]
+- @sub2 = ["Press Releases", "press"]
 
 
 - @title = " | "+@sub0[0]
@@ -47,11 +47,11 @@
             Houston, TX 77036
       
 
-      #two.main
+      .main
         .content
-          %a{:name => @sub0[1]}
+          %a{:name => @sub1[1]}
           .section.no-image
-            %h1=@sub0[0]
+            %h1=@sub1[0]
             %p
               %b December 10
               %br
@@ -59,11 +59,15 @@
               = " | "
               %a{:href=>"/images/toydrive.pdf"} Details
             %p
-              %b December 19-23
-              %br
-              Toys for Tots Drive
-            %p
               %b February 2012
               (Exact Date TBD)
               %br
               Business Luncheon with Keynote Speaker TBA
+
+          %a{:name => @sub2[1]}
+          .section.no-image
+            %h1=@sub2[0]
+            %p
+              %b Title
+              = " | "
+              %a{:href=>"/images/press/1.pdf"}  Details

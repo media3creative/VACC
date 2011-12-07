@@ -192,8 +192,10 @@
 		@extend .clearfix
 		position: relative
 		width: ($sidebar-width - (($h-gap - $corner-radius) * 2))
-		margin: 0 auto ($v-gap / 2)
+		margin: 0 auto
 		padding: 0
+		&:last-child
+			margin-bottom: 15px
 		a
 			img
 				position: relative
@@ -207,14 +209,11 @@
 				+float-left
 				clear: right
 				top: 2px
-				margin: 0 auto ($v-gap / 2)
+				margin: 0 auto
 				color: $section-text
 				font-size: 12px
 				font-weight: 200
 				text-align: justify
-				line-height: 1.7em
-				&:last-child
-					margin-bottom: ($v-gap / 2)
 			&:hover
 				p
 					color: $secondary
